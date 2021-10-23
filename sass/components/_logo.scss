@@ -1,0 +1,13 @@
+.logo {
+  margin-right: 93px;
+
+  color: #000000;
+
+  font-family: 'Raleway', sans-serif;
+  @include font(26px, 1.19, 0.03em, 700);
+  text-decoration: none;
+}
+
+.logo__label {
+  color: $accentColor;
+}
