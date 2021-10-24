@@ -1,14 +1,5 @@
-.features-list {
-  display: flex;
-}
-
-.features-list__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+.features-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features-list__icon {
@@ -16,7 +7,6 @@
   justify-content: center;
   height: 120px;
   margin-bottom: 30px;
-  border-radius: 4px;
 
   background-color: $bgSecondaryColor;
 }
@@ -27,9 +17,46 @@
   color: $secondaryColor;
 
   @include font(14px, 1.14, 0.03em, 700);
+  text-align: center;
   text-transform: uppercase;
 }
 
 .features-list__text {
   @include font(14px, 1.71, 0.03em);
 }
+
+// .features-list {
+//   display: flex;
+// }
+
+// .features-list__item {
+//   width: calc((100% - 90px) / 4);
+//   margin-right: 30px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .features-list__icon {
+//   @extend %flex-align;
+//   justify-content: center;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   border-radius: 4px;
+
+//   background-color: $bgSecondaryColor;
+// }
+
+// .features-list__label {
+//   margin-bottom: 10px;
+
+//   color: $secondaryColor;
+
+//   @include font(14px, 1.14, 0.03em, 700);
+//   text-transform: uppercase;
+// }
+
+// .features-list__text {
+//   @include font(14px, 1.71, 0.03em);
+// }

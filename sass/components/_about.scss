@@ -1,42 +1,46 @@
 .about {
-  padding-top: 0;
+  display: none;
 }
 
-.about__title,
-.team__title,
-.clients__title {
-  margin-bottom: 50px;
+// .about {
+//   padding-top: 0;
+// }
 
-  color: $secondaryColor;
+// .about__title,
+// .team__title,
+// .clients__title {
+//   margin-bottom: 50px;
 
-  @include font(36px, 1.17, 0.03em, 700);
-  text-align: center;
-}
+//   color: $secondaryColor;
 
-.about-list {
-  display: flex;
-  justify-content: space-between;
-}
+//   @include font(36px, 1.17, 0.03em, 700);
+//   text-align: center;
+// }
 
-.about-list__item {
-  position: relative;
-}
+// .about-list {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.about-list__image {
-  display: block;
-}
+// .about-list__item {
+//   position: relative;
+// }
 
-.about-list__desc {
-  position: absolute;
-  bottom: 0;
+// .about-list__image {
+//   display: block;
+// }
 
-  width: 100%;
-  padding: 27px 0;
+// .about-list__desc {
+//   position: absolute;
+//   bottom: 0;
 
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
+//   width: 100%;
+//   padding: 27px 0;
 
-  @include font(14px, 1.14, 0.03em, 700);
-  text-align: center;
-  text-transform: uppercase;
-}
+//   color: #ffffff;
+//   background-color: rgba(47, 48, 58, 0.8);
+
+//   @include font(14px, 1.14, 0.03em, 700);
+//   text-align: center;
+//   text-transform: uppercase;
+// }

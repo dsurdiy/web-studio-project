@@ -1,10 +1,10 @@
 .logo {
-  margin-right: 93px;
+  padding: 16px 0;
 
   color: #000000;
 
   font-family: 'Raleway', sans-serif;
-  @include font(26px, 1.19, 0.03em, 700);
+  @include font(24px, 1.17, 0.03em, 700);
   text-decoration: none;
 }
 

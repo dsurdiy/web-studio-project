@@ -1,21 +1,22 @@
+.clients {
+  text-align: center;
+}
+
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-list__item {
-  width: 170px;
-  height: 92px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
 }
 
 .clients-list__link {
   @extend %flex-align;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  padding: 15px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -37,3 +38,22 @@
 .clients-list__link:focus .clients-list__icon {
   fill: $accentColor;
 }
+
+// .clients-list__item {
+//   width: 170px;
+//   height: 92px;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .clients-list__link {
+//   @extend %flex-align;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+
+// }
