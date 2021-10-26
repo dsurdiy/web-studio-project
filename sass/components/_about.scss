@@ -1,46 +1,44 @@
 .about {
-  display: none;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  padding-top: 0;
 }
 
-// .about {
-//   padding-top: 0;
-// }
+.about__title {
+  margin-bottom: 50px;
 
-// .about__title,
-// .team__title,
-// .clients__title {
-//   margin-bottom: 50px;
+  color: $secondaryColor;
 
-//   color: $secondaryColor;
+  @include font(36px, 1.17, 0.03em, 700);
+  text-align: center;
+}
 
-//   @include font(36px, 1.17, 0.03em, 700);
-//   text-align: center;
-// }
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
 
-// .about-list {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.about-list__item {
+  position: relative;
+}
 
-// .about-list__item {
-//   position: relative;
-// }
+.about-list__image {
+  display: block;
+}
 
-// .about-list__image {
-//   display: block;
-// }
+.about-list__desc {
+  position: absolute;
+  bottom: 0;
 
-// .about-list__desc {
-//   position: absolute;
-//   bottom: 0;
+  width: 100%;
+  padding: 27px 0;
 
-//   width: 100%;
-//   padding: 27px 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 
-//   color: #ffffff;
-//   background-color: rgba(47, 48, 58, 0.8);
-
-//   @include font(14px, 1.14, 0.03em, 700);
-//   text-align: center;
-//   text-transform: uppercase;
-// }
+  @include font(14px, 1.14, 0.03em, 700);
+  text-align: center;
+  text-transform: uppercase;
+}

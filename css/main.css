@@ -56,6 +56,12 @@ img {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -115,11 +121,25 @@ img {
   margin: 0 auto;
   padding: 118px 0;
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
-.hero__container {
-  padding: 0 60px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    min-height: 600px;
+    padding: 200px 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero__container {
+    padding: 0 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -145,6 +165,13 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .btn {
   min-width: 200px;
   min-height: 50px;
@@ -166,14 +193,44 @@ img {
   background-color: #188ce8;
 }
 
-.features-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features-list__icon {
   justify-content: center;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
   background-color: #f5f4fa;
 }
 
@@ -188,6 +245,12 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list__label {
+    text-align: left;
+  }
+}
+
 .features-list__text {
   font-size: 14px;
   line-height: 1.71;
@@ -196,7 +259,51 @@ img {
 }
 
 .about {
-  display: none;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
+
+.about__title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list__item {
+  position: relative;
+}
+
+.about-list__image {
+  display: block;
+}
+
+.about-list__desc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .team {
@@ -214,6 +321,29 @@ img {
   font-weight: 700;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__title,
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
+}
+
 .team-list__item {
   margin-bottom: 30px;
   padding-bottom: 24px;
@@ -222,8 +352,24 @@ img {
   background-color: #ffffff;
 }
 
-.team-list__item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .team-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+  }
 }
 
 .team-list__photo {
@@ -299,9 +445,21 @@ img {
   margin: -15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+}
+
 .clients-list__item {
-  width: calc((100% - 60px) / 2);
+  flex-basis: calc((100% - 60px) / 2);
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .clients-list__link {
