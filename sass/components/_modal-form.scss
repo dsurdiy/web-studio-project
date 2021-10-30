@@ -7,7 +7,15 @@
 
   color: $secondaryColor;
 
-  @include font(20px, 1.15, 0.03em, 700);
+  @include font(15px, 1.5, 0.03em, 700);
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__label {
@@ -92,8 +100,13 @@
   @extend %flex-align;
   justify-content: center;
 
-  @include font(14px, 1.71, 0.03em);
+  @include font(12px, 1.17, 0.03em);
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__check-icon {
