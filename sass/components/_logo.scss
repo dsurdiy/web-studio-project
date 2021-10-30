@@ -6,6 +6,11 @@
   font-family: 'Raleway', sans-serif;
   @include font(24px, 1.17, 0.03em, 700);
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__label {

@@ -4,6 +4,16 @@
   background-color: #ffffff;
 }
 
-// .page-header__items {
-//   display: flex;
-// }
+.page-header__items {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.page-header__logo {
+  margin-right: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
