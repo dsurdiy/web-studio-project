@@ -26,6 +26,11 @@
   }
 }
 
+.main-nav__button:hover .main-nav__icon-menu,
+.main-nav__button:focus .main-nav__icon-menu {
+  fill: $accentColor;
+}
+
 .nav-list {
   @media screen and (max-width: 767px) {
     display: none;
