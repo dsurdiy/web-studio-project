@@ -799,6 +799,7 @@ img {
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: none;
   background-color: transparent;
   color: #ffffff;
 }
@@ -969,13 +970,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio-list__text {
-    padding: 50px 24px;
+    padding: 20px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-list__text {
-    padding: 63px 24px;
+    padding: 40px 24px;
   }
 }
 
