@@ -15,4 +15,4 @@
 - Adaptive layout
 - Landing page for a small web-studio
 
-#### [Deployed project link](dsurdiy.github.io/web-studio-project/)
+#### [Deployed project link](https://dsurdiy.github.io/web-studio-project/)
